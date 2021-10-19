@@ -1,0 +1,10 @@
+[Unit]
+Description=lcd show service
+
+[Service]
+ExecStart=/usr/bin/python3 /home/ubuntu/MiniPupperROS/mangdang/LCD/run_lcd_service.py
+KillSignal=2
+TimeoutStopSec=10
+
+[Install]
+WantedBy=multi-user.target
