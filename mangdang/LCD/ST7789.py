@@ -8,8 +8,8 @@ import os
 from PIL import Image
 from PIL import ImageDraw
 
-sys.path.append("/home/ubuntu/MiniPupperROS")
-sys.path.extend([os.path.join(root, name) for root, dirs, _ in os.walk("/home/ubuntu/MiniPupperROS") for name in dirs])
+sys.path.append("/home/ubuntu/minipupper_ros_bsp")
+sys.path.extend([os.path.join(root, name) for root, dirs, _ in os.walk("/home/ubuntu/minipupper_ros_bsp") for name in dirs])
 import mangdang.Adafruit_GPIO as GPIO
 import mangdang.Adafruit_GPIO.SPI as SPI
 from mangdang.LCD.gif import AnimatedGif
