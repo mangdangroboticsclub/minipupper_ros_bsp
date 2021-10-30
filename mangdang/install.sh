@@ -11,7 +11,3 @@ cmake .
 make
 sudo bash install.sh
 
-# install lcd service
-sudo bash /home/ubuntu/minipupper_ros_bsp/mangdang/LCD/install.sh
-
-

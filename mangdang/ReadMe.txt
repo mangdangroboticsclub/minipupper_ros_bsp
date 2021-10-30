@@ -14,5 +14,3 @@ This folder is for Mangdang additional code.
 4. Adafruit_GPIO : Third party Adafruit interface
 
 5. LCD: ST7789-based IPS LCD driver interface
-
-6. Example: the examples for developers

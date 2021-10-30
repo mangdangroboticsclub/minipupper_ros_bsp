@@ -8,12 +8,11 @@
 #
 
 IO_MAP=(
-12 0
 13 0
 16 0
-20 1
-19 1
-26 1
+20 0
+25 1
+21 1
 )
 
 function io_init(){
@@ -48,7 +47,9 @@ done
 sudo hciattach /dev/ttyAMA0 bcm43xx 921600 noflow -
 sleep 1
 sudo hciattach /dev/ttyAMA0 bcm43xx 921600 noflow -
-sleep 2
+sleep 1
 
 # start battery monitor deamon
 batterymonitor &
+
+sudo python3 /home/ubuntu/minipupper_ros_bsp/mangdang/LCD/lcd_init.py
