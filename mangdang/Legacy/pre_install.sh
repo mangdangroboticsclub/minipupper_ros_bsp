@@ -8,7 +8,6 @@ sudo apt-get update
 
 #dependencies
 sudo apt-get install -y python3-pip
-sudo apt-get install -y cmake
 sudo apt-get install -y i2c-tools
 
 #Libraries of Python3
