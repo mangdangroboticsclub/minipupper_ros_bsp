@@ -6,11 +6,11 @@
 
 
 IO_MAP=(
-20 0  #red led
-13 0  #green  led
-16 0  #buzzer
 25 1  #servo 1
 21 1  #servo 2
+26 1  #lcd led
+24 0  #lcd rst
+27 0  #lcd dc
 )
 
 function io_init(){
@@ -28,6 +28,11 @@ function io_init(){
 # init IO
 io_init
 sleep 1
+
+chmod 777 /sys/class/gpio/gpio24/value
+chmod 777 /sys/class/gpio/gpio27/value
+chmod 777 /dev/spidev0.0
+
 
 #Power monitor
 while true

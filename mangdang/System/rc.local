@@ -20,12 +20,12 @@ do
 done
 
 # init the Bluetooth
-sudo hciattach /dev/ttyAMA0 bcm43xx 230400 noflow -
-sleep 3
-sudo hciattach /dev/ttyAMA0 bcm43xx 230400 noflow -
+sudo hciattach /dev/ttyAMA0 bcm43xx 115200 noflow -
+sleep 8
+sudo hciattach /dev/ttyAMA0 bcm43xx 115200 noflow -
 sleep 2
 
 #init lcd
-python3 /home/ubuntu/minipupper_ros_bsp/mangdang/LCD/lcd_init.py
+#python3 /home/ubuntu/minipupper_ros_bsp/mangdang/LCD/lcd_init.py
 
 
