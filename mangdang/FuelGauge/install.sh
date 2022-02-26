@@ -5,8 +5,9 @@
 set -x
 sudo cp i2c4.dtbo /boot/firmware/overlays/
 
-sudo make
-sudo make install
+make clean
+make
+make install
 
 sudo cp battery_monitor /usr/bin/
 sudo cp battery_monitor.service /lib/systemd/system/
