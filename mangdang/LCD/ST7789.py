@@ -12,7 +12,6 @@ sys.path.append("/home/ubuntu/minipupper_ros_bsp")
 sys.path.extend([os.path.join(root, name) for root, dirs, _ in os.walk("/home/ubuntu/minipupper_ros_bsp") for name in dirs])
 import mangdang.Adafruit_GPIO as GPIO
 import mangdang.Adafruit_GPIO.SPI as SPI
-from mangdang.LCD.gif import AnimatedGif
 
 SPI_CLOCK_HZ = 31200000 # 31.2 MHz
 

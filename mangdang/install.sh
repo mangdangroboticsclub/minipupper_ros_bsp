@@ -12,3 +12,7 @@ sudo bash install.sh
 
 cd /home/ubuntu/minipupper_ros_bsp/mangdang/System
 sudo bash install.sh
+
+
+cd /home/ubuntu/minipupper_ros_bsp/mangdang/LCD
+sudo bash install.sh
